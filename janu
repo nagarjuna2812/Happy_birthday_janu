@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 40px;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff;
+      }
+      to {
+        text-shadow: 0 0 25px #ff6b81;
+      }
+    }
+
+    .message {
+      font-size: 1.3em;
+      margin: 20px auto;
+      line-height: 1.6;
+      max-width: 90%;
+      color: #5641b7af;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 1.1em;
+      color: aqua;
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎉 Happy Birthday, janu 🎂</h1>
+
+    <div class="message">
+      "🎉 Happy Birthday! Wishing you a day filled with love, laughter, and unforgettable memories. May all your dreams come true this year. Have the most amazing celebration. Enjoy every moment! 🎂🥳" 🎈🎁
+    </div>
+
+    <div class="gallery">
+      <img src="IMG-20250713-WA0000.jpg" alt="Birthday Image 1">
+      <img src= "Screenshot_2025-08-08-14-56-54-312_com.google.android.apps.photos-edit.jpg"  alt="Birthday Image 2">
+    </div>
+
+    <!-- Background Music -->
+    <audio autoplay loop>
+      <source src="audio/happy-birthday-334876.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <footer class="footer">
+      I am so lucky because of one of my best Friend ❤️
+    </footer>
+  </div>
+
+</body>
+</html>
